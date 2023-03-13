@@ -71,3 +71,18 @@ console.log(uniqueCars);     //  unique cars... Output:
 console.log(carsIndex);         //  unique cars index...  
 
 // Output: [1, 3]
+
+
+
+const uniq = cars.filter((car2, index) => { 
+    return ( cars.findIndex((a) => a.color === car2.color) === index ); }); 
+
+console.log(uniq);    // unique cars
+
+// output ->
+// 0: {color: 'purple', type: 'Volkswagen', capacity: 7}
+// 1: {color: 'red', type: 'station wagon', capacity: 5}
+// 2: {color: 'white', type: 'minivan', capacity: 8}
+// 3: {color: 'blue', type: 'cabrio', capacity: 4}
+// 4: {color: 'green', type: 'minivan', capacity: 6}
+  
